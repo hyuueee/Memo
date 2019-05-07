@@ -1,0 +1,14 @@
+a = 0,b = 1
+#For a , b = b , a+b
+
+i = 0, a = 0, b = 1
+i = 1, a = 1(last b), b = 1 (last a + last b)
+i = 2, a = 1(last b), b = 2 (last a + last b)
+i = 3, a = 2(last b), b = 1+2 = 3 (last a+ last b)
+i = 4, a = 3(last b), b = 2+3 = 5 (last a+ last b)
+
+#For a = b, b = a + b
+i = 0, a = 0, b = 1
+i = 1, a = 1(last b), b = 1+1 = 2(current a + last b)
+i = 2, a = 2(last b), b = 2+2 = 4(current a + last b)
+i = 3, a = 4(last b), b = 4+4 = 8(current a + last b)
